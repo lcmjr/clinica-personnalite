@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 
 class SeedGaleria extends Seeder{
     public function run(){
-        DB::table('secao_home')->insert(array(
+        DB::table('galeria')->insert(array(
             [ 'titulo' => "Teste",
                 'foto-pequena' => "1-p.jpg",
                 'foto-grande' => "1.jpg"],

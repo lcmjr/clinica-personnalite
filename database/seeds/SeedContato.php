@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 class SeedContato extends Seeder{
 
     public function run(){
-        DB::table('clientes')->insert(array(
+        DB::table('contato')->insert(array(
             ['telefone_1' => "11 4432-2877",
             'telefone_2' => "11 4438-4874",
             'telefone_3' => "11 4994-4447",

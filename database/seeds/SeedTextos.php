@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 class SeedTextos extends Seeder{
 
     public function run(){
-        DB::table('secao_home')->insert(array(
+        DB::table('textos')->insert(array(
             [ 'titulo' => "Porque um sorriso muda tudo!",
                 'texto' => "<p>A Clínica Personnalité é uma clínica odontológica referência em Implantodontia e Estética.Amparados por tecnologia de 
                 ponta, procuramos oferecer um atendimento personalizado e o tratamento mais adequado às necessidades e expectativas do paciente.</p>

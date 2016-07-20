@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    font:16px/1.2 'Raleway', sans-serif;
+}
+a {
+    color: #414042;
+}
+a:hover {
+    color: #6C1E3E;
+}
+b{
+    font-weight: 500;
+}
+.clear{
+    clear: both;
+}
+.central{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.borda-dashed {
+    border-bottom: 1px dashed #808285;
+    border-top: 1px dashed #808285;
+}
+.icone-telefone{
+    height: 35px;
+    width: 28px;
+    background: url(../imagens/phone.png);
+}
+.icone-relogio{
+    width: 35px;
+    height: 35px;
+    background: url(../imagens/relogio-cinza.png);
+}

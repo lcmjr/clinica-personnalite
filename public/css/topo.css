@@ -1,0 +1,62 @@
+.topo-barra {
+    border-top: 0;
+    margin-bottom: 25px;
+    padding: 15px 0;
+}
+.icone-relogio, .container-telefone .icone-telefone {
+    float:left;
+    margin-right: 10px;
+}
+.content-horario, .content-telefone {
+    float: left;
+}
+.container-telefone, .container-horario-atendimento {
+    float: right;
+}
+.container-telefone{
+    margin-right:30px;
+}
+#logo {
+    width: 233px;
+    height: 118px;
+    background: url(../imagens/logo.png);
+    float: left;
+}
+#menu-principal {
+    float: left;
+    margin: 99px 10px 0 40px;
+}
+.link-menu:hover, .page-home .link-menu-home, .page-especializacoes .link-menu-especializacoes, .page-doutores .link-menu-doutores, .page-blog .link-menu-blog, .page-contato .link-menu-contato{
+    color: #6C1E3E;
+    background-position-y: 0;
+}
+.link-menu {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 11px;
+    background: url(../imagens/seta-menu.png) center -11px no-repeat;
+    padding-top: 13px;
+    transition: 0.15s;
+}
+.rede-facebook {
+    background: url(../imagens/facebook.png);
+}
+.agende-consulta {
+    background: url(../imagens/btn-agende-consulta.png);
+}
+.rede-facebook, .agende-consulta{
+    display: inline-block;
+    background-size: contain;
+}
+#topo-principal .rede-facebook {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 94px;
+}
+#topo-principal .agende-consulta {
+    width: 115px;
+    height: 115px;
+    float: right;
+}

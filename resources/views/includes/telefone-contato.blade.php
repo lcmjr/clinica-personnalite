@@ -1,0 +1,1 @@
+{{$dados_contato[0]->telefone_1}} | {{$dados_contato[0]->telefone_2}} | {{$dados_contato[0]->telefone_3}}<br/>{{$dados_contato[0]->email}}

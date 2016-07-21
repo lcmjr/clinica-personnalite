@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link href='css/padrao.css' rel='stylesheet' type='text/css'>
     <link href='css/topo.css' rel='stylesheet' type='text/css'>
+    <link href='css/rodape.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/padrao.js"></script>
     @yield('javascript')
@@ -49,5 +50,32 @@
     </div>
 </header>
 @yield('conteudo')
+<div class="borda-dashed" id="newsletter-box">
+    <h3>Cadastre-se para receber novidades!</h3>
+    <form action="#" method="post">
+        <label for="nome-news">Nome:</label>
+        <input id="nome-news" type="text" class="ipt-reset"/>
+        <label for="email-news">Email:</label>
+        <input id="email-news" type="email" class="ipt-reset"/>
+        <button class="btn-reset">OK</button>
+    </form>
+</div>
+<footer id="rodape">
+    <div class="central">
+        <div id="onde-estamos-rodape">
+            <h2>Onde estamos?</h2>
+            @include('includes.endereco')
+        </div>
+        <div id="fale-com-a-clinica-rodape">
+            <h2>Fale com a clínica</h2>
+            @include('includes.telefone-contato')<br/><br/>
+            @include('includes.horario-atendimento')
+        </div>
+        <a class="agende-consulta" href="/contato"></a>
+        <div class="clear"></div>
+        <div id="copyright"><span>Clínica Personalité - Copyright 2016. Todos os direitos reservados.</span><a id="logo-youp" target="_blank" href="http://youp.com.br/"></a>
+            <div class="clear"></div></div>
+    </div>
+</footer>
 </body>
 </html>

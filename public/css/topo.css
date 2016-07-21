@@ -10,7 +10,7 @@
 .content-horario, .content-telefone {
     float: left;
 }
-.container-telefone, .container-horario-atendimento {
+.container-telefone, #topo-principal .container-horario-atendimento{
     float: right;
 }
 .container-telefone{
@@ -38,16 +38,6 @@
     background: url(../imagens/seta-menu.png) center -11px no-repeat;
     padding-top: 13px;
     transition: 0.15s;
-}
-.rede-facebook {
-    background: url(../imagens/facebook.png);
-}
-.agende-consulta {
-    background: url(../imagens/btn-agende-consulta.png);
-}
-.rede-facebook, .agende-consulta{
-    display: inline-block;
-    background-size: contain;
 }
 #topo-principal .rede-facebook {
     width: 20px;

@@ -1,6 +1,7 @@
 body{
     margin:0;
     font:16px/1.2 'Raleway', sans-serif;
+    color: #414042;
 }
 a {
     color: #414042;
@@ -10,6 +11,18 @@ a:hover {
 }
 b{
     font-weight: 500;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 23px;
+}
+h3{
+    font-size: 18px;
+}
+h1, h2, h3{
+    font-weight: 400;
 }
 .clear{
     clear: both;
@@ -31,4 +44,53 @@ b{
     width: 35px;
     height: 35px;
     background: url(../imagens/relogio-cinza.png);
+}
+.ipt-reset {
+    border-radius: 5px;
+    border: 1px solid #D1D3D4;
+    padding: 13px;
+    color: #414042;
+    font: 14px/1.2 'Raleway', sans-serif;
+}
+.btn-reset {
+    background: #CCCAC2;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font: 500 18px/1.2 'Raleway', sans-serif;
+    padding: 13px 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.rede-facebook {
+    width: 25px;
+    height: 25px;
+    background: url(../imagens/facebook.png);
+}
+.agende-consulta {
+    width: 140px;
+    float: right;
+    height: 140px;
+    background: url(../imagens/btn-agende-consulta.png);
+}
+.rede-facebook, .agende-consulta{
+    background-size: contain;
+}
+.cor-vinho{
+    color: #6C1E3E;
+}
+.cor-verde{
+    color: #4D6574;
+}
+.fundo-vinho{
+    background: #B58E9E;
+    color: white;
+}
+.fundo-vinho h1, .fundo-vinho h2,.fundo-vinho h3{
+    color: white;
+}
+.btn-reset.cor-vinho:hover,#newsletter-box .btn-reset:hover {
+    color: #CCCAC2;
+    background: #6C1E3E;
 }

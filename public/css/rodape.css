@@ -1,0 +1,73 @@
+#rodape {
+    background: #F1F2F2;
+    font-size: 14px;
+    transition: 0.5s;
+    padding: 60px 0 10px;
+}
+#rodape h2 {
+    margin: 15px 0;
+    color: #4D6574;
+}
+#rodape .central {
+    max-width: 710px;
+}
+#fale-com-a-clinica-rodape, #onde-estamos-rodape{
+    float: left;
+}
+#onde-estamos-rodape {
+    border-right: 1px dashed;
+    padding: 0 30px 10px 0;
+    margin: 0 20px 40px 0;
+}
+#copyright {
+    color: #939598;
+    text-align: center;
+    font-size: 13px;
+}
+#logo-youp {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    background: url("../imagens/logo-youp.png");
+    margin: 0 0 -3px 10px;
+}
+#newsletter-box .ipt-reset {
+    background: #CCCAC2;
+    padding: 5px 10px;
+    margin-left: 10px;
+    width: 120px;
+}
+#newsletter-box .btn-reset {
+    background: none;
+    margin: 0px 0 0 10px;
+    padding: 3px 5px 2px;
+    font-size: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+#newsletter-box h3,#newsletter-box form {
+    display: inline-block;
+}
+#newsletter-box h3 {
+    margin: 20px 15px 20px 30px;
+}
+#newsletter-box label {
+    font-size: 18px;
+}
+#newsletter-box {
+    max-width: 860px;
+    margin: 30px auto;
+}
+#nome-news {
+    margin-right: 20px;
+}
+@media (max-width: 1700px) {
+    #rodape {
+        background: url("../imagens/fundo-rodape-1920.png") left top no-repeat transparent;
+    }
+}
+@media (max-width: 970px) {
+    #rodape {
+        background-image: url("../imagens/fundo-rodape.png");
+    }
+}

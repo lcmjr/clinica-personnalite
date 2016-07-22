@@ -1,3 +1,15 @@
+#topo-principal {
+    border-bottom: 4px solid #B58E9E;
+    padding-bottom: 23px;
+    margin-bottom: 30px;
+}
+.page-home #topo-principal{
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+.page-home #topo-principal::after{
+    display:none;
+}
 .topo-barra {
     border-top: 0;
     margin-bottom: 25px;

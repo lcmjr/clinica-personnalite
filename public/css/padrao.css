@@ -94,3 +94,11 @@ h1, h2, h3{
     color: #CCCAC2;
     background: #6C1E3E;
 }
+.seta-vinho::after {
+    content: "";
+    background: url(../imagens/seta-vinho.png);
+    display: block;
+    height: 22px;
+    width: 50px;
+    margin: 15px auto -49px;
+}

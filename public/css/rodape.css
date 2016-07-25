@@ -35,13 +35,14 @@
     background: #CCCAC2;
     padding: 5px 10px;
     margin-left: 10px;
-    width: 120px;
+    width: 145px;
 }
 #newsletter-box .btn-reset {
     background: none;
     margin: 0px 0 0 10px;
     padding: 3px 5px 2px;
     font-size: 20px;
+    color: #414042;
     box-sizing: border-box;
     float: right;
 }
@@ -53,6 +54,7 @@
 }
 #newsletter-box label {
     font-size: 18px;
+    font-weight: normal;
 }
 #newsletter-box {
     max-width: 860px;

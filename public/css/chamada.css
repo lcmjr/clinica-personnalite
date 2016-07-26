@@ -1,6 +1,9 @@
 .chamada-texto {
     margin-bottom: 50px;
 }
+.chamada-foto {
+    text-align: center;
+}
 .chamada-texto.seta-vinho {
     margin-bottom: 60px;
     padding-bottom: 30px;

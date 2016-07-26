@@ -13,4 +13,12 @@ class ModelTextos extends Model{
     public static function clinica(){
         return self::orderBy('id', 'ASC')->where("id","=","1")->orWhere("id","=","3")->orWhere("id","=","2")->get();
     }
+
+    public static function especializacoes(){
+        return self::orderBy('id', 'ASC')->where("id","=","5")->get();
+    }
+
+    public static function doutores(){
+        return self::orderBy('id', 'ASC')->where("id","=","7")->get();
+    }
 }

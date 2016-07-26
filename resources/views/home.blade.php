@@ -13,12 +13,12 @@
     <div class="clear"></div>
 </div>
 <div id="container-controle-banner"></div>
-<section class="section-home central row" id="home-section-1">
+<section class="chamada-texto central row" id="home-section-1">
     <h1 class="titulo cor-vinho col-md-4">{{$textos[1]->titulo}}</h1>
     <div class="ctd-texto col-md-8"><?= $textos[1]->texto;?><br/><a href="/clinica" class="btn-reset">Conheça a clínica</a>
     </div>
 </section>
-<section class="section-home seta-vinho fundo-vinho">
+<section class="chamada-texto chamada-foto seta-vinho fundo-vinho">
     <div class="central">
         <h1 class="titulo">{{$textos[0]->titulo}}</h1>
         <div class="row">

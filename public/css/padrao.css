@@ -117,7 +117,7 @@ h1, h2, h3{
 }
 .seta-vinho::after {
     background: url(../imagens/seta-vinho.png);
-    margin-bottom: -55px;
+    margin-bottom: -53px;
 }
 .fundo-vinho::before {
     background: url(../imagens/seta-branco.png);
@@ -129,4 +129,7 @@ h1, h2, h3{
     padding-bottom: 30px;
     text-align: center;
     margin-bottom: 60px;
+}
+.txt-center{
+    text-align: center;
 }

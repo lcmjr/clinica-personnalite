@@ -13,3 +13,4 @@
 
 Route::get('/', 'ControllerHome@pagina');
 Route::get('/home', 'ControllerHome@pagina');
+Route::get('/clinica', 'ControllerClinica@pagina');

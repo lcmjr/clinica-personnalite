@@ -25,7 +25,7 @@
     max-width: 340px;
     max-height: 340px;
 }
-@media all and (max-width:892px) {
+@media all and (max-width:992px) {
     .ctd-texto {
         text-align: center;
         padding: 20px 0;

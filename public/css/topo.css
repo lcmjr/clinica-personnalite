@@ -38,7 +38,7 @@
     float: left;
     margin: 99px 10px 0 40px;
 }
-.link-menu:hover, .page-home .link-menu-home, .page-especializacoes .link-menu-especializacoes, .page-doutores .link-menu-doutores, .page-blog .link-menu-blog, .page-contato .link-menu-contato{
+.link-menu:hover, .page-clinica .link-menu-clinica, .page-home .link-menu-home, .page-especializacoes .link-menu-especializacoes, .page-doutores .link-menu-doutores, .page-blog .link-menu-blog, .page-contato .link-menu-contato{
     color: #6C1E3E;
     background-position-y: 0;
 }

@@ -1,0 +1,33 @@
+.container-banner {
+    max-width: 1024px;
+}
+.banner{
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    opacity: 0;
+}
+#container-controle-banner{
+    text-align: center;
+    display: block;
+}
+.controle-banner{
+    display: inline-block;
+    margin: 0 2px;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #6C1E3E;
+    border-radius:8px;
+    transition: 0.25s;
+}
+.controle-banner:hover, .controle-banner-ativo{
+    background-color:#6C1E3E;
+    border-color:white;
+}
+.container-banner::after {
+    content: url(../imagens/fundo-banner.png);
+    display: block;
+    margin-top: -187px;
+    position: relative;
+    z-index: 10;
+}

@@ -6,4 +6,5 @@
         <h1 class="titulo cor-vinho">{{$textos[0]->titulo}}</h1>
         <div class="ctd-texto txt-center"><?= $textos[0]->texto;?></div>
     </article>
+    @include('includes.chamada-escolher', ["texto" => $textos[1]])
 @stop

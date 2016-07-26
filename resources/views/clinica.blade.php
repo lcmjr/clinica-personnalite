@@ -9,19 +9,7 @@
             <br/>
         </div>
     </article>
-    <article class="chamada-texto chamada-foto seta-vinho fundo-vinho">
-        <div class="central">
-            <h1 class="titulo">{{$textos[1]->titulo}}</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="foto-borda">
-                        <img src="uploads/paginas/{{$textos[1]->foto}}" alt="{{$textos[1]->titulo}}"/>
-                    </div>
-                </div>
-                <div class="ctd-texto col-md-6"><?= $textos[1]->texto;?></div>
-            </div>
-        </div>
-    </article>
+    @include('includes.chamada-escolher', ["texto" => $textos[1]])
     <article class="chamada-texto central">
         <h1 class="titulo cor-vinho">{{$textos[2]->titulo}}</h1>
         <div class="ctd-texto txt-center"><?= $textos[2]->texto;?></div>

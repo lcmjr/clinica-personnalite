@@ -19,6 +19,6 @@ class ModelTextos extends Model{
     }
 
     public static function doutores(){
-        return self::orderBy('id', 'ASC')->where("id","=","7")->get();
+        return self::orderBy('id', 'DESC')->where("id","=","7")->orWhere("id","=","2")->get();
     }
 }

@@ -1,10 +1,13 @@
 #topo-principal {
     border-bottom: 4px solid #B58E9E;
-    padding-bottom: 23px;
+    padding-bottom: 0;
     margin-bottom: 50px;
 }
+#topo-principal.seta-vinho::after{
+    margin-bottom: -30px;
+}
 .page-home #topo-principal{
-    padding-bottom: 15px;
+    padding-bottom: 19px;
     margin-bottom: 0px;
 }
 .page-home #topo-principal::after{

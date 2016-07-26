@@ -13,22 +13,6 @@
     <div class="clear"></div>
 </div>
 <div id="container-controle-banner"></div>
-<section class="chamada-texto central row" id="home-section-1">
-    <h1 class="titulo cor-vinho col-md-4">{{$textos[1]->titulo}}</h1>
-    <div class="ctd-texto col-md-8"><?= $textos[1]->texto;?><br/><a href="/clinica" class="btn-reset">Conheça a clínica</a>
-    </div>
-</section>
-<section class="chamada-texto chamada-foto seta-vinho fundo-vinho">
-    <div class="central">
-        <h1 class="titulo">{{$textos[0]->titulo}}</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="foto-borda">
-                    <img src="uploads/paginas/{{$textos[0]->foto}}" alt="{{$textos[0]->titulo}}"/>
-                </div>
-            </div>
-            <div class="ctd-texto col-md-6"><?= $textos[0]->texto;?><br/><a href="/especializacoes" class="btn-reset">Saiba Mais</a></div>
-        </div>
-    </div>
-</section>
+@include('chamadas.chamada-texto', ["titulo"=>$textos[1]->titulo,"texto" => $textos[1]->texto,"link"=>"clinica","link_txt"=>"Conheça a clínica"])
+@include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho","texto" => $textos[0],"link"=>"especializacoes","link_txt"=>"Saiba Mais"])
 @stop

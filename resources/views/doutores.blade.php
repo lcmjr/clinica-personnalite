@@ -2,9 +2,18 @@
 
 @section('classe-pg', 'page-doutores')
 @section('conteudo')
-    <article class="chamada-texto central">
-        <h1 class="titulo cor-vinho">{{$textos[0]->titulo}}</h1>
-        <div class="ctd-texto txt-center"><?= $textos[0]->texto;?></div>
-    </article>
-    @include('includes.chamada-escolher', ["texto" => $textos[1]])
+    @include('chamadas.chamada-texto-centro', ["titulo"=>$textos[0]->titulo,"texto" => $textos[0]->texto])
+    <div class="central container-doutores">
+    @foreach($doutores as $doutor)
+        <div class="doutor row">
+            <div class="col-md-5">
+            @include('includes.foto-borda', ["path"=>"uploads/doutor/","foto" => $doutor->foto, "classe_tamanho"=> "foto-borda-m", "titulo" =>$doutor->doutor])
+            </div>
+            <div class="ctd-doutor col-md-7">
+                <div class="ctd-texto"><h2 class="titulo cor-verde">{{$doutor->doutor}}</h2>{!!$doutor->texto!!} </div>
+            </div>
+        </div>
+    @endforeach
+    </div>
+    @include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho","texto" => $textos[1]])
 @stop

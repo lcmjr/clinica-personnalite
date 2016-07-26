@@ -1,33 +1,50 @@
-.chamada-texto {
-    margin-bottom: 50px;
+.chamada {
+    margin-bottom: 40px;
 }
 .chamada-foto {
     text-align: center;
 }
-.chamada-texto.seta-vinho {
+.chamada.seta-vinho {
     margin-bottom: 60px;
     padding-bottom: 30px;
 }
-.chamada-texto h1{
+.chamada h1{
     text-align: center;
+}
+.chamada-foto h1{
     margin-bottom: 30px;
+}
+.chamada-texto-centro h1 {
+    margin-bottom: 20px;
+}
+.foto-borda, .foto-borda img{
+    height: auto;
+    border-radius: 180px;
 }
 .foto-borda {
     display: inline-block;
     border: 1px solid;
-    max-width: 358px;
-    border-radius: 180px;
-    max-height: 358px;
     overflow: hidden;
-    height: auto;
     width: 90%;
 }
 .foto-borda img {
-    margin: 8px;
     display: block;
-    height: auto;
     width: 100%;
-    border-radius: 180px;
+}
+.foto-borda-m{
+    max-width: 240px;
+}
+.foto-borda-m img{
+    max-width: 230px;
+    max-height: 230px;
+    margin: 4px;
+}
+.foto-borda-g{
+    max-width: 358px;
+    max-height: 358px;
+}
+.foto-borda-g img{
+    margin: 8px;
     max-width: 340px;
     max-height: 340px;
 }
@@ -36,20 +53,19 @@
         text-align: center;
         padding: 20px 5%;
     }
-    .chamada-texto h1 {
-        margin-bottom: 0;
+    .chamada h1 {
         padding: 0 5%;
     }
-    .chamada-texto.chamada-foto h1 {
-        margin-bottom: 30px;
+    .chamada-texto h1 {
+        margin-bottom: 0;
     }
 }
 @media all and (max-width:400px) {
-    .foto-borda {
+    .foto-borda-g {
         width: 300px;
         height: 300px;
     }
-    .foto-borda img {
+    .foto-borda-g img {
         width: 290px;
         height: 290px;
         margin: 4px;

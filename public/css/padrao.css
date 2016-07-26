@@ -133,3 +133,6 @@ h1, h2, h3{
 .txt-center{
     text-align: center;
 }
+.titulo-principal{
+    margin-bottom: 30px;
+}

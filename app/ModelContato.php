@@ -9,4 +9,7 @@ class ModelContato extends Model{
     public static function dados_contato(){
         return self::get(['telefone_1','telefone_2','telefone_3','email','facebook','endereco_1','endereco_2','endereco_3','endereco_observacao','atendimento']);
     }
+    public static function dados_contato_pg(){
+        return self::get(['telefone_1','telefone_2','telefone_3','email','facebook','endereco_1','endereco_2','endereco_3','endereco_observacao','atendimento','maps']);
+    }
 }

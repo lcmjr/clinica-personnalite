@@ -1,0 +1,35 @@
+.facebook-contato {
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 4px 0 2px 35px;
+    display: inline-block;
+    width: 180px;
+}
+.btn.cor-vinho {
+    background: #CCCAC2;
+    font: 500 18px/1.2 'Raleway', sans-serif;
+    border: none;
+    transition: 0.15s;
+    padding: 9px 0;
+}
+.btn.cor-vinho:hover {
+    color: white;
+    background-color: #6C1E3E;
+}
+.form-control{
+    color: #414042;
+}
+.titulo-contato{
+    margin-top: 40px;
+}
+.titulo-contato-principal{
+    margin-top: 0px;
+}
+@media (max-width:768px) {
+    .contato-col-phone {
+        text-align: center;
+    }
+    .titulo-contato, #titulo-contato-principal-2{
+        margin-top: 20px;
+    }
+}

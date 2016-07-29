@@ -3,7 +3,7 @@
 @section('classe-pg', 'page-contato')
 @section('conteudo')
     <h1 class="titulo cor-vinho titulo-principal txt-center">Contato</h1>
-    <div class="central row">
+    <article class="central row">
         <div class="col-md-5 col-sm-5 col-xs-12 contato-col-phone">
             <h3 class="titulo cor-vinho titulo-contato-principal">Fale com a Personnalité</h3>
             {{$dados_contato[0]->telefone_1}}<br/>
@@ -69,5 +69,9 @@
                 </div>
             </form>
         </div>
-    </div>
+    </article>
+    <section class="seta-vinho fundo-vinho container-maps">
+        <h1 class="titulo txt-center">Como chegar?</h1>
+        {!!$dados_contato[0]->maps!!}
+    </section>
 @stop

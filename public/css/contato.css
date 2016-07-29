@@ -25,6 +25,20 @@
 .titulo-contato-principal{
     margin-top: 0px;
 }
+.container-maps{
+    margin-top: 50px;
+    padding: 0;
+}
+.container-maps h1 {
+    margin: 10px 0 20px;
+}
+.container-maps iframe {
+    display: block;
+    width: 100%;
+}
+.container-maps::after {
+    margin: 0px 0 -26px;
+}
 @media (max-width:768px) {
     .contato-col-phone {
         text-align: center;

@@ -5,6 +5,7 @@
 Homestead.yaml
 Homestead.json
 .env
+.env-online
 /.idea/
 /config/database.php
 .gitignore

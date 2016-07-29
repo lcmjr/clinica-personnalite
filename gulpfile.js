@@ -12,5 +12,15 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.stylesIn('');
+    mix.styles([
+        'padrao.css',
+        'banner.css',
+        'chamada.css',
+        'contato.css',
+        'doutor.css',
+        'home.css',
+        'menu.css',
+        'rodape.css',
+        'topo.css'
+    ]);
 });

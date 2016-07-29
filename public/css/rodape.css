@@ -73,3 +73,63 @@
         background-image: url("../imagens/fundo-rodape.png");
     }
 }
+@media (max-width: 873px) {
+    #newsletter-box {
+        text-align: center;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+}
+@media (max-width: 770px) {
+    #onde-estamos-rodape {
+        border-right: none;
+    }
+    #fale-com-a-clinica-rodape, #onde-estamos-rodape {
+        float: none;
+        margin: 0 auto;
+        border-bottom: 1px dashed;
+        padding: 0 19px 20px;
+        width: 310px;
+        text-align: center;
+    }
+    #rodape {
+        padding: 20px 0 10px;
+        background: #F1F2F2;
+    }
+    .container-horario-atendimento::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    #fale-com-a-clinica-rodape .container-horario-atendimento {
+        width: 230px;
+        display: inline-block;
+    }
+    .agende-consulta {
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media (max-width: 570px) {
+    #newsletter-box form {
+        width: 220px;
+        display: inline-block;
+        text-align: right;
+    }
+    #newsletter-box .ipt-reset {
+        margin: 10px 0 10px 4px;
+    }
+    #newsletter-box .btn-reset {
+        float: none;
+    }
+    #newsletter-box label {
+        width: 60px;
+    }
+}
+@media (max-width: 350px) {
+    #fale-com-a-clinica-rodape, #onde-estamos-rodape {
+        padding: 0 5px 20px;
+        width: 280px;
+    }
+}

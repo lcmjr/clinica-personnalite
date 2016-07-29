@@ -13,17 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clinica Personnalité @yield('title')</title>
     <base href="http://localhost:8000"/>
+    <link rel="icon" href="imagens/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href='css/padrao.css' rel='stylesheet' type='text/css'>
-    <link href='css/topo.css' rel='stylesheet' type='text/css'>
-    <link href='css/rodape.css' rel='stylesheet' type='text/css'>
-    <link href='css/banner.css' rel='stylesheet' type='text/css'>
-    <link href='css/home.css' rel='stylesheet' type='text/css'>
-    <link href='css/chamada.css' rel='stylesheet' type='text/css'>
-    <link href='css/doutor.css' rel='stylesheet' type='text/css'>
-    <link href='css/contato.css' rel='stylesheet' type='text/css'>
-    <link href='css/menu.css' rel='stylesheet' type='text/css'>
+    <link href='css/all.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/padrao.js"></script>
     @yield('javascript')

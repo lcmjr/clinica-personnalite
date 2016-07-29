@@ -7,3 +7,6 @@ Homestead.json
 .env
 /.idea/
 /config/database.php
+.gitignore
+css/
+imagens/favicon.ico

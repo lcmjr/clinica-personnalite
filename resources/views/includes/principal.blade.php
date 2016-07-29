@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clinica Personnalité @yield('title')</title>
     <base href="{{ asset('/') }}"/>
-    <link rel="icon" href="imagens/favicon.png" />
+    <link rel="icon" href="imagens/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='css/all.css' rel='stylesheet' type='text/css'>
@@ -34,8 +34,8 @@
             </div>
             <div class="clear"></div>
         </div>
-        <a id="logo" href="/home"></a>
-        <a class="agende-consulta" href="/contato"></a>
+        <a id="logo" href="home"></a>
+        <a class="agende-consulta" href="contato"></a>
         <a class="rede-facebook" target="_blank" href="{{$dados_contato[0]->facebook}}"></a>
         <button id="btn-menu-rpsv" class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">
@@ -43,12 +43,12 @@
           </span>
         </button>
         <nav id="menu-principal">
-            <a class="link-menu link-menu-home" href="/home">Home</a>
-            <a class="link-menu link-menu-clinica" href="/clinica">A Clínica</a>
-            <a class="link-menu link-menu-especializacoes" href="/especializacoes">Especializações</a>
-            <a class="link-menu link-menu-doutores" href="/doutores">Doutores</a>
-            <a class="link-menu link-menu-blog" href="/blog">Blog</a>
-            <a class="link-menu link-menu-contato" href="/contato">Contato</a>
+            <a class="link-menu link-menu-home" href="home">Home</a>
+            <a class="link-menu link-menu-clinica" href="clinica">A Clínica</a>
+            <a class="link-menu link-menu-especializacoes" href="especializacoes">Especializações</a>
+            <a class="link-menu link-menu-doutores" href="doutores">Doutores</a>
+            <a class="link-menu link-menu-blog" href="blog">Blog</a>
+            <a class="link-menu link-menu-contato" href="contato">Contato</a>
         </nav>
         <div class="clear"></div>
     </div>
@@ -56,7 +56,7 @@
 @yield('conteudo')
 <div class="borda-dashed" id="newsletter-box">
     <h3>Cadastre-se para receber novidades!</h3>
-    <form action="/newsletter" method="post">
+    <form action="newsletter" method="post">
         <label for="nome-news">Nome:</label>
         <input id="nome-news" type="text" class="ipt-reset"/>
         <label for="email-news">Email:</label>

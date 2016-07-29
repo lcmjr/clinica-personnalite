@@ -11,3 +11,5 @@ Homestead.json
 .gitignore
 css/
 imagens/favicon.ico
+php.ini
+.htaccess

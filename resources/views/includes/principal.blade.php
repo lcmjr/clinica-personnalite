@@ -23,6 +23,7 @@
     <link href='css/chamada.css' rel='stylesheet' type='text/css'>
     <link href='css/doutor.css' rel='stylesheet' type='text/css'>
     <link href='css/contato.css' rel='stylesheet' type='text/css'>
+    <link href='css/menu.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/padrao.js"></script>
     @yield('javascript')
@@ -41,7 +42,13 @@
             <div class="clear"></div>
         </div>
         <a id="logo" href="/home"></a>
-        <div id="btn-menu-rpsv" class="rpsv-mobile"></div>
+        <a class="agende-consulta" href="/contato"></a>
+        <a class="rede-facebook" target="_blank" href="{{$dados_contato[0]->facebook}}"></a>
+        <button id="btn-menu-rpsv" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <nav id="menu-principal">
             <a class="link-menu link-menu-home" href="/home">Home</a>
             <a class="link-menu link-menu-clinica" href="/clinica">A Clínica</a>
@@ -50,8 +57,6 @@
             <a class="link-menu link-menu-blog" href="/blog">Blog</a>
             <a class="link-menu link-menu-contato" href="/contato">Contato</a>
         </nav>
-        <a class="rede-facebook" target="_blank" href="{{$dados_contato[0]->facebook}}"></a>
-        <a class="agende-consulta" href="/contato"></a>
         <div class="clear"></div>
     </div>
 </header>

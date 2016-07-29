@@ -1,5 +1,6 @@
 .container-banner {
     max-width: 1024px;
+    overflow: hidden;
 }
 .banner{
     float: left;

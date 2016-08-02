@@ -15,11 +15,11 @@
 }
 .controle-banner{
     display: inline-block;
-    margin: 0 2px;
-    height: 12px;
-    width: 12px;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 18px;
     border: 1px solid #6C1E3E;
-    border-radius:8px;
     cursor: pointer;
     transition: 0.25s;
 }

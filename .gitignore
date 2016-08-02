@@ -13,3 +13,4 @@ css/
 imagens/favicon.ico
 php.ini
 .htaccess
+/build

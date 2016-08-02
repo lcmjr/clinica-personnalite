@@ -1,4 +1,6 @@
-var elixir = require('laravel-elixir');
+var elixir = require('laravel-elixir'),
+    gulp = require('gulp'),
+    inlinesource = require('gulp-inline-source');
 
 /*
  |--------------------------------------------------------------------------
@@ -23,4 +25,12 @@ elixir(function(mix) {
         'rodape.css',
         'topo.css'
     ]);
+    mix.styles(['small.css']);
+    mix.task('inline');
+});
+
+gulp.task("inline",function(){
+    return gulp.src('resources/views/includes/principal.blade.php')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('build/'));
 });

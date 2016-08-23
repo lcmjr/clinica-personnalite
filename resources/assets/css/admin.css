@@ -1,0 +1,34 @@
+.ewHeaderRow {
+    padding:20px;
+    background-color: white;
+    border-bottom: solid 2px #b58e9e;
+}
+.marcador {
+    background-color: #b58e9e;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    margin-left: -21px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right: -3px;
+}
+#primeiro-marcador {
+    margin-top: -3px;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    text-decoration:underline;
+}
+#RootMenu li a:hover{
+    text-decoration:none;
+}
+#RootMenu li ul li a:hover{
+    text-decoration:underline;
+}
+.ewFooterRow {
+    background-color: #b58e9e;
+}

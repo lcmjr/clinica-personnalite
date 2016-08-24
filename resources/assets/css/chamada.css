@@ -65,12 +65,12 @@
 }
 @media all and (max-width:400px) {
     .foto-borda-g {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
     .foto-borda-g img {
-        width: 290px;
-        height: 290px;
+        width: 270px;
+        height: 270px;
         margin: 4px;
     }
 }

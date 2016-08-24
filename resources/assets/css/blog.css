@@ -23,3 +23,8 @@
 .posts-blog-white h3 {
     color: #4D6574;
 }
+@media (max-width: 767px) {
+    .post h3, .ctd-post {
+        height: auto;
+    }
+}

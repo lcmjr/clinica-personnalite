@@ -1,0 +1,25 @@
+.img-blog {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    width: 250px;
+    display: inline-block;
+    margin-top: 0;
+}
+.ctd-post {
+    height: 79px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.post h3 {
+    font-weight: 400;
+    height: 38px;
+    overflow: hidden;
+}
+.posts-blog-white h1 {
+    color: #6C1E3E;
+}
+.posts-blog-white h3 {
+    color: #4D6574;
+}

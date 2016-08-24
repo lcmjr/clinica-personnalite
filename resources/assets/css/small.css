@@ -1,0 +1,170 @@
+body{
+    margin:0;
+    font:16px/1.2 'Raleway', sans-serif;
+    color: #414042;
+}
+a {
+    color: #414042;
+}
+a:hover {
+    color: #6C1E3E;
+}
+b{
+    font-weight: 500;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 23px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+h1, h2{
+    font-weight: 400;
+}
+.clear{
+    clear: both;
+}
+.central{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.borda-dashed {
+    border-bottom: 1px dashed #808285;
+    border-top: 1px dashed #808285;
+}
+.icone-telefone{
+    height: 35px;
+    width: 28px;
+    background: url(../imagens/phone.png);
+}
+.icone-relogio{
+    width: 35px;
+    height: 35px;
+    background: url(../imagens/relogio-cinza.png);
+}
+#topo-principal {
+    border-bottom: 4px solid #B58E9E;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+#topo-principal.seta-vinho::after{
+    margin-bottom: -30px;
+}
+.page-home #topo-principal{
+    padding-bottom: 19px;
+    margin-bottom: 0px;
+}
+.page-home #topo-principal::after{
+    display:none;
+}
+.topo-barra {
+    border-top: 0;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    text-align: left;
+}
+.icone-relogio, .container-telefone .icone-telefone {
+    float:left;
+    margin-right: 10px;
+}
+.content-horario, .content-telefone {
+    float: left;
+}
+.container-telefone, #topo-principal .container-horario-atendimento{
+    float: right;
+}
+.container-telefone{
+    margin-right:30px;
+}
+#logo {
+    width: 233px;
+    height: 118px;
+    background: url(../imagens/logo.png);
+    float: left;
+}
+#menu-principal {
+    float: left;
+    margin: 87px 0 0 40px;
+}
+.link-menu:hover, .page-clinica .link-menu-clinica, .page-home .link-menu-home, .page-especializacoes .link-menu-especializacoes, .page-doutores .link-menu-doutores, .blog .link-menu-blog, .page-contato .link-menu-contato{
+    color: #6C1E3E;
+    background-position-y: 0;
+}
+.link-menu {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 11px;
+    background: url(../imagens/seta-menu.png) center -11px no-repeat;
+    padding-top: 13px;
+    transition: 0.15s;
+    display: inline-block;
+}
+#topo-principal .rede-facebook {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 94px 20px 0 0;
+}
+#topo-principal .agende-consulta {
+    width: 115px;
+    height: 115px;
+    float: right;
+}
+.rede-facebook {
+    width: 25px;
+    height: 25px;
+    background: url(../imagens/facebook.png);
+}
+.agende-consulta {
+    width: 140px;
+    float: right;
+    height: 140px;
+    background: url(../imagens/btn-agende-consulta.png);
+}
+.rede-facebook, .agende-consulta{
+    background-size: contain;
+}
+.cor-vinho{
+    color: #6C1E3E;
+}
+.cor-verde{
+    color: #4D6574;
+}
+.fundo-vinho{
+    background: #B58E9E;
+    color: white;
+}
+.fundo-vinho h1, .fundo-vinho h2,.fundo-vinho h3{
+    color: white;
+}
+.btn-reset.cor-vinho:hover,#newsletter-box .btn-reset:hover {
+    color: #CCCAC2;
+    background: #6C1E3E;
+}
+.fundo-vinho::before, .seta-vinho::after{
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 50px;
+    margin: 0 auto;
+}
+.seta-vinho::after {
+    background: url(../imagens/seta-vinho.png);
+    margin-bottom: -53px;
+}
+.fundo-vinho::before {
+    background: url(../imagens/seta-branco.png);
+}
+.ctd-texto {
+    text-align: left;
+}
+.seta-vinho {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}

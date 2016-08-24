@@ -78,6 +78,19 @@ return [
             'schema' => 'public',
         ],
 
+        'wordpress' => [
+            'driver'    => 'mysql',
+            'host' => env('DB_HOST_WP', 'localhost'),
+            'port' => env('DB_PORT_WP', '3306'),
+            'database' => env('DB_DATABASE_WP', 'clinica-personnalite'),
+            'username' => env('DB_USERNAME_WP', 'root'),
+            'password' => env('DB_PASSWORD_WP', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => 'wp_',
+            'strict'    => false,
+            'engine'    => null,
+        ],
     ],
 
     /*

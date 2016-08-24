@@ -16,6 +16,7 @@ var elixir = require('laravel-elixir'),
 elixir(function(mix) {
     mix.styles([
         'padrao.css',
+        'topo.css',
         'banner.css',
         'chamada.css',
         'contato.css',
@@ -23,10 +24,10 @@ elixir(function(mix) {
         'home.css',
         'menu.css',
         'rodape.css',
-        'topo.css'
+        'blog.css'
     ]);
-    mix.styles(['small.css']);
-    mix.task('inline');
+    mix.styles(['small.css'],'public/css/small.css');
+    //mix.task('inline');
 });
 
 gulp.task("inline",function(){

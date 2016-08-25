@@ -20,6 +20,9 @@ class SeedGaleria extends Seeder{
             [ 'titulo' => "Teste5",
                 'foto-pequena' => "5-p.jpg",
                 'foto-grande' => "5.jpg"],
+            [ 'titulo' => "Teste6",
+                'foto-pequena' => "3-p.jpg",
+                'foto-grande' => "3.jpg"],
         ));
     }
 }

@@ -24,10 +24,10 @@ elixir(function(mix) {
         'home.css',
         'menu.css',
         'rodape.css',
-        'blog.css'
+        'blog.css',
+        'galeria.css'
     ]);
     mix.styles(['small.css'],'public/css/small.css');
-    //mix.task('inline');
 });
 
 gulp.task("inline",function(){

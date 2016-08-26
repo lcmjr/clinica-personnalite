@@ -1,6 +1,9 @@
 @extends('includes.principal')
 
 @section('classe-pg', 'page-contato')
+@section('javascript')
+    <script type="text/javascript" src="js/contato.js"></script>
+@stop
 @section('conteudo')
     <h1 class="titulo cor-vinho titulo-principal txt-center">Contato</h1>
     <article class="central row">
@@ -19,7 +22,9 @@
         <div class="col-md-7 col-sm-7 col-xs-12 contato-col-phone">
             <h3 class="titulo cor-vinho titulo-contato-principal" id="titulo-contato-principal-2">Pré Agendamento de Consulta</h3>
             Preencha o formulário abaixo para fazer o seu pré agendamento, e aguarde o nosso contato para confirmação de sua consulta.<br/><br/>
-            <form method="post" action="">
+            <div id="msg-result-contato"></div>
+            <form method="post" onsubmit="return ajax_contato()" id="form-contato" action="contato">
+                {{ csrf_field()}}
                 <div class="form-group">
                     <input name="nome" class="form-control" placeholder="Nome" type="text"/>
                 </div>
@@ -32,34 +37,34 @@
                 <div class="form-group">
                     <select name="dia-de-semana" class="form-control">
                         <option>Qual dia da semana?</option>
-                        <option value="0">Segunda Feira</option>
-                        <option value="1">Terça Feira</option>
-                        <option value="2">Quarta Feira</option>
-                        <option value="3">Quinta Feira</option>
-                        <option value="4">Sexta Feira</option>
-                        <option value="5">Sábado</option>
+                        <option value="Segunda Feira">Segunda Feira</option>
+                        <option value="Terça Feira">Terça Feira</option>
+                        <option value="Quarta Feira">Quarta Feira</option>
+                        <option value="Quinta Feira">Quinta Feira</option>
+                        <option value="Sexta Feira">Sexta Feira</option>
+                        <option value="Sábado">Sábado</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <select name="horario" class="form-control">
                         <option>Preferência de horário</option>
-                        <option value="0">Manhã</option>
-                        <option value="1">Tarde</option>
-                        <option value="2">Noite</option>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <select name="doutor" class="form-control">
                         <option>Doutor de sua preferência</option>
                         @foreach($doutores as $doutor)
-                        <option value="{{$doutor->$doutor}}">{{$doutor->$doutor}}</option>
+                        <option value="{{$doutor->doutor}}">{{$doutor->doutor}}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="form-group">
                     <span class="span-form">1ª vez na Clínica Personnalité?</span>
-                    <label class="radio-inline"><input name="primeira-vez" type="radio" name="Sim">Sim</label>
-                    <label class="radio-inline"><input name="primeira-vez" type="radio" name="Não">Não</label>
+                    <label class="radio-inline"><input name="primeira-vez" type="radio" value="Sim">Sim</label>
+                    <label class="radio-inline"><input name="primeira-vez" type="radio" value="Não">Não</label>
                 </div>
                 <div class="form-group">
                     <textarea class="form-control" rows="5" name="informacoes" placeholder="Outras Informações"></textarea>

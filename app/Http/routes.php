@@ -12,8 +12,10 @@
 */
 
 Route::get('/', 'ControllerHome@pagina');
-Route::get('/home', 'ControllerHome@pagina');
-Route::get('/clinica', 'ControllerClinica@pagina');
-Route::get('/especializacoes', 'ControllerEspecializacoes@pagina');
-Route::get('/doutores', 'ControllerDoutores@pagina');
-Route::get('/contato', 'ControllerContato@pagina');
+Route::get('/home', 'ControllerHome@pagina')->name('Home');
+Route::get('/clinica', 'ControllerClinica@pagina')->name('Clinica');
+Route::get('/especializacoes', 'ControllerEspecializacoes@pagina')->name('Especializacoes');
+Route::get('/doutores', 'ControllerDoutores@pagina')->name('Doutores');
+Route::get('/contato', 'ControllerContato@pagina')->name('Contato');
+Route::post('/contato', 'ControllerContato@email');
+Route::post('/newsletter', 'ControllerNewsletter@email');

@@ -14,6 +14,6 @@
 </div>
 <div id="container-controle-banner"></div>
 @include('chamadas.chamada-texto', ["titulo"=>$textos[1]->titulo,"texto" => $textos[1]->texto,"link"=>"clinica","link_txt"=>"Conheça a clínica"])
-@include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho","texto" => $textos[0],"link"=>"especializacoes","link_txt"=>"Saiba Mais"])
+@include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho animate-in animate-y-neg","texto" => $textos[0],"link"=>"especializacoes","link_txt"=>"Saiba Mais"])
 @include('posts.posts',['posts'=>$posts,'classes'=>'posts-blog-white'])
 @stop

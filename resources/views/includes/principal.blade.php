@@ -64,11 +64,11 @@
 </div>
 <footer id="rodape">
     <div class="central">
-        <div id="onde-estamos-rodape">
+        <div id="onde-estamos-rodape" class="animate-in animate-x-pos">
             <h2>Onde estamos?</h2>
             @include('includes.endereco')
         </div>
-        <div id="fale-com-a-clinica-rodape">
+        <div id="fale-com-a-clinica-rodape" class="animate-in animate-x-pos">
             <h2>Fale com a clínica</h2>
             @include('includes.telefone-contato')<br/><br/>
             @include('includes.horario-atendimento')
@@ -84,6 +84,7 @@
 <link href='css/small.css' rel='stylesheet' type='text/css'>
 <link href='css/all.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
 <script type="text/javascript" src="js/padrao.js"></script>
 @yield('javascript')
 </body>

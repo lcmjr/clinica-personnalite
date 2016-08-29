@@ -5,7 +5,7 @@
     @include('chamadas.chamada-texto-centro', ["titulo"=>$textos[0]->titulo,"texto" => $textos[0]->texto])
     <div class="central container-doutores">
     @foreach($doutores as $doutor)
-        <div class="doutor row">
+        <div class="doutor row animate-in animate-y-pos">
             <div class="col-md-5">
             @include('includes.foto-borda', ["path"=>"uploads/doutor/","foto" => $doutor->foto, "classe_tamanho"=> "foto-borda-m", "titulo" =>$doutor->doutor])
             </div>
@@ -15,5 +15,5 @@
         </div>
     @endforeach
     </div>
-    @include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho","texto" => $textos[1]])
+    @include('chamadas.chamada-foto', ["classes"=>"seta-vinho fundo-vinho animate-in animate-y-neg","texto" => $textos[1]])
 @stop

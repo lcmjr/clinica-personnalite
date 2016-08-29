@@ -7,7 +7,7 @@
 @section('conteudo')
     <h1 class="titulo cor-vinho titulo-principal txt-center">Contato</h1>
     <article class="central row">
-        <div class="col-md-5 col-sm-5 col-xs-12 contato-col-phone">
+        <div class="col-md-5 col-sm-5 col-xs-12 contato-col-phone animate-in animate-x-pos">
             <h3 class="titulo cor-vinho titulo-contato-principal">Fale com a Personnalité</h3>
             {{$dados_contato[0]->telefone_1}}<br/>
             {{$dados_contato[0]->telefone_2}}<br/>
@@ -19,7 +19,7 @@
             <h3 class="titulo cor-vinho titulo-contato">Endereço</h3>
             @include('includes.endereco')
         </div>
-        <div class="col-md-7 col-sm-7 col-xs-12 contato-col-phone">
+        <div class="col-md-7 col-sm-7 col-xs-12 contato-col-phone animate-in animate-x-neg">
             <h3 class="titulo cor-vinho titulo-contato-principal" id="titulo-contato-principal-2">Pré Agendamento de Consulta</h3>
             Preencha o formulário abaixo para fazer o seu pré agendamento, e aguarde o nosso contato para confirmação de sua consulta.<br/><br/>
             <div id="msg-result-contato"></div>
@@ -75,7 +75,7 @@
             </form>
         </div>
     </article>
-    <section class="seta-vinho fundo-vinho container-maps">
+    <section class="seta-vinho fundo-vinho container-maps animate-in animate-y-neg">
         <h1 class="titulo txt-center">Como chegar?</h1>
         {!!$dados_contato[0]->maps!!}
     </section>

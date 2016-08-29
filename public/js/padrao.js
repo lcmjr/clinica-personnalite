@@ -10,8 +10,16 @@ $(window).ready(function(){
             $(this).addClass("is-active");
             $("#menu-principal").slideDown(500);
         }
-    })
-})
+    });
+    $(this).scroll();
+}).scroll(function(){
+    $(".animate-in").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("animate-start");
+        }
+    });
+});
 function remove_class(classe){
     $("."+classe).removeClass(classe);
 }

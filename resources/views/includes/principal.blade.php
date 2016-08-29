@@ -52,13 +52,15 @@
 @yield('conteudo')
 <div class="borda-dashed" id="newsletter-box">
     <h3>Cadastre-se para receber novidades!</h3>
-    <form action="newsletter" method="post">
+    <form action="newsletter" onsubmit="return enviar_news()" id="form-newsletter" method="post">
+        {{ csrf_field()}}
         <label for="nome-news">Nome:</label>
-        <input id="nome-news" type="text" class="ipt-reset"/>
+        <input id="nome-news" name="nome" type="text" class="ipt-reset"/>
         <label for="email-news">Email:</label>
-        <input id="email-news" type="email" class="ipt-reset"/>
+        <input id="email-news" name="email" type="email" class="ipt-reset"/>
         <button class="btn-reset">OK</button>
     </form>
+    <div id="msg-result-news"></div>
 </div>
 <footer id="rodape">
     <div class="central">

@@ -92,7 +92,7 @@ h1, h2{
 }
 .link-menu:hover, .page-clinica .link-menu-clinica, .page-home .link-menu-home, .page-especializacoes .link-menu-especializacoes, .page-doutores .link-menu-doutores, .blog .link-menu-blog, .page-contato .link-menu-contato{
     color: #6C1E3E;
-    background-position-y: 0;
+    background-position: center 0;
 }
 .link-menu {
     font-size: 15px;

@@ -19,3 +19,4 @@ Route::get('/doutores', 'ControllerDoutores@pagina')->name('Doutores');
 Route::get('/contato', 'ControllerContato@pagina')->name('Contato');
 Route::post('/contato', 'ControllerContato@email');
 Route::post('/newsletter', 'ControllerNewsletter@email');
+Route::get('/newsletter/{id}', 'ControllerNewsletter@ativar_email');

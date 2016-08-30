@@ -14,8 +14,8 @@
     <title>Clinica Personnalité @yield('title')</title>
     <base href="{{ asset('/') }}"/>
     <link rel="icon" href="imagens/favicon.ico" />
-    <!-- inline public/css/small.css -- >
-    <link href='css/small.css' rel='stylesheet' inline type='text/css'>-->
+    <!-- inline ../../public/css/small.css -- >
+    <link href='../../../public/css/inline.css' rel='stylesheet' inline type='text/css'> -->
 </head>
 <body class="@yield('classe-pg')">
 <header class="seta-vinho" id="topo-principal">
@@ -84,7 +84,6 @@
 <link href='css/small.css' rel='stylesheet' type='text/css'>
 <link href='css/all.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/visible.js"></script>
 <script type="text/javascript" src="js/padrao.js"></script>
 @yield('javascript')
 </body>

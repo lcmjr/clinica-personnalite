@@ -27,7 +27,11 @@ elixir(function(mix) {
         'blog.css',
         'galeria.css'
     ]);
-    mix.styles(['small.css'],'public/css/small.css');
+    mix.styles(['inline.css'],'public/css/inline.css');
+    mix.scripts(['banner.js'],'public/js/banner.js');
+    mix.scripts(['contato.js'],'public/js/contato.js');
+    mix.scripts(['galeria.js'],'public/js/galeria.js');
+    mix.scripts(['visible.js','padrao.js'],'public/js/padrao.js');
 });
 
 gulp.task("inline",function(){

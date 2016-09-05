@@ -64,16 +64,16 @@
 </div>
 <footer id="rodape">
     <div class="central">
-        <div id="onde-estamos-rodape" class="animate-in animate-x-pos">
+        <div id="onde-estamos-rodape" class="animate-in animate-x-neg">
             <h2>Onde estamos?</h2>
             @include('includes.endereco')
         </div>
-        <div id="fale-com-a-clinica-rodape" class="animate-in animate-x-pos">
+        <div id="fale-com-a-clinica-rodape" class="animate-in animate-x-neg">
             <h2>Fale com a clínica</h2>
             @include('includes.telefone-contato')<br/><br/>
             @include('includes.horario-atendimento')
         </div>
-        <a class="agende-consulta" href="/contato"></a>
+        <a class="agende-consulta" href="contato"></a>
         <div class="clear"></div>
         <div id="copyright"><span>Clínica Personalité - Copyright 2016. Todos os direitos reservados.</span><a id="logo-youp" target="_blank" href="http://youp.com.br/"></a>
             <div class="clear"></div></div>

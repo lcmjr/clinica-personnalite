@@ -13,7 +13,7 @@
             {{$dados_contato[0]->telefone_2}}<br/>
             {{$dados_contato[0]->telefone_3}}<br/><br/>
             Para dúvidas, informações ou sugestões,<br/> envie um email para:<br/>
-            <span class="cor-vinho">{{$dados_contato[0]->email}}</span>
+            <a href="mailto:{{$dados_contato[0]->email}}" class="cor-vinho">{{$dados_contato[0]->email}}</a>
             <h3 class="titulo cor-vinho titulo-contato">Curta</h3>
             <a class="rede-facebook facebook-contato" target="_blank" href="{{$dados_contato[0]->facebook}}">clinicapersonnalite</a><br/>
             <h3 class="titulo cor-vinho titulo-contato">Endereço</h3>

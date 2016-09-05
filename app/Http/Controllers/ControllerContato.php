@@ -25,7 +25,7 @@ class ControllerContato extends Controller{
         $data['informacoes'] = $request->input('informacoes');
         Mail::send('mail.contact',["data"=>$data],function($m) use($data){
             $m->from('no-reply@clinicapersonnalite.com','Clinica Personnalité');
-            $m->to('luiz.manhani@gmail.com','Luiz Carlos')->subject('O Cliente '.$data['nome']);
+            $m->to('contato@clinicapersonnalite.com','Clinica Personnalité')->subject('O Cliente '.$data['nome']);
         });
     }
 }
